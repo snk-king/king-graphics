@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>King Graphics</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Include the EmailJS library in the head section of your HTML file -->
+  <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script src="https://kit.fontawesome.com/4abdecaca6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+	<nav>
+  <div id="logo">
+    <img src="logo.jpeg" alt="King Graphics" width="80px" height="2px">
+  </div>
+  <input type="checkbox" id="toggle">
+  <label for="toggle" class="toggle-btn"><i class="fas fa-bars"></i></label>
+  <ul>
+    <li><a href="#home"><i class="fa-solid fa-house"></i></a></li>
+    <li><a href="#Works"><i class="fa-solid fa-light fa-pen-nib"></i></a></li>
+    <li><a href="#specialties"><i class="fa-solid fa-wand-magic-sparkles fa-rotate-180"></i></a></li>
+    <li><a href="#Gallery"><i class="fa-solid fa-mountain-sun"></i></a></li>
+    <li><a href="#contactus"><i class="fa-solid fa-phone"></i></a></li>
+  </ul>
+</nav>
+
+  
+  <section id="home">
+    <div class="home"> 
+      <h1>King </h1><h1>Graphics</h1>
+      <div class="line">
+        <p>Designs that</p> <p class="my-text">Inspire</p>   <p>Designs that <p class="my-text">speak</b></p>
+      </div>
+    </div>
+    <canvas id="canvas"></canvas>
+  </section>
+  <section id="Works">
+    <div>
+      <h1>Works</h1>
+      <p>These are the works that can be done by us</p>
+      <div class="container">
+        <div class="box">
+          <img src="images/visitingcard.jpg">
+          <div class="box-text">
+            <h2>Box 1</h2>
+            <p>When you hover over me, I will expand to show more information.</p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image2.jpg">
+          <div class="box-text">
+            <h2>Box 2</h2>
+            <p>When you hover over me, I will expand to show more information.</p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image3.jpg">
+          <div class="box-text">
+            <h2>Box 3</h2>
+            <p>When you hover over me, I will expand to show more information.</p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image4.jpg">
+          <div class="box-text">
+            <h2>Box 4</h2>
+            <p>When you hover over me, I will expand to show more information.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="specialties">
+    <h1>Specialties of a Graphic Designer</h1>
+    <p>12 Indian languages and French</p>
+    <div class="cardcontainer">
+      <div class="card" id="logo-design">
+        <h2>Logo Design</h2>
+        <p>Specializing in creating logos that represent your brand and make a lasting impression.</p>
+        <div class="expanded">
+          <h3>Logo Design Services</h3>
+          <ul>
+            <li>Logo design consultation and ideation</li>
+            <li>Custom logo design</li>
+            <li>Rebranding and logo refresh</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" id="brand-identity">
+        <h2>Brand Identity</h2>
+        <p>Designing a consistent and cohesive visual identity that reflects your brand's personality and values.</p>
+        <div class="expanded">
+          <h3>Brand Identity Services</h3>
+          <ul>
+            <li>Brand identity consultation and ideation</li>
+            <li>Logo design and development</li>
+            <li>Brand style guide creation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" id="print-design">
+        <h2>Print Design</h2>
+        <p>Designing high-quality print materials such as brochures, business cards, and flyers that stand out.</p>
+        <div class="expanded">
+          <h3>Print Design Services</h3>
+          <ul>
+            <li>Brochure design and printing</li>
+            <li>Business card design and printing</li>
+            <li>Flyer and poster design and printing</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" id="digital-design">
+        <h2>Digital Design</h2>
+        <p>Creating visually stunning designs for websites, social media, and other digital platforms.</p>
+        <div class="expanded">
+          <h3>Digital Design Services</h3>
+          <ul>
+            <li>Website design and development</li>
+            <li>Social media graphics and ads</li>
+            <li>Email newsletter design</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" id="typography">
+        <h2>Typography</h2>
+        <p>Expert in choosing the right fonts and designing custom typography that adds personality to your brand.</p>
+        <div class="expanded">
+          <h3>Typography Services</h3>
+          <ul>
+            <li>Typography consultation and ideation</li>
+            <li>Custom font design and development</li>
+            <li>Typography implementation across brand materials</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" id="color-theory">
+        <h2>Color Theory</h2>
+        <p>Understanding how colors work together and using them strategically to create an emotional connection with your audience.</p>
+        <div class="expanded">
+          <h3>Color Theory Services</h3>
+          <ul>
+            <li>Color consultation and ideation</li>
+            <li>Color palette creation and implementation</li>
+            <li>Color psychology and emotional connection strategy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="Gallery">
+    <div class="gallery-header">
+      <h2>My Portfolio</h2>
+      <p>Check out some of my recent works below.</p>
+    </div>
+  
+    <div class="gallery-section">
+      <div class="gallery-item" data-image="img1.jpg">
+        <img src="img1-thumb.jpg" alt="Gallery Item">
+        <div class="overlay">
+          <h3>Design Project 1</h3>
+          <p>A brief description of the project goes here.</p>
+          <a href="img1.jpg" class="btn">View Larger</a>
+        </div>
+      </div>
+      <div class="gallery-item" data-image="img2.jpg">
+        <img src="img2-thumb.jpg" alt="Gallery Item">
+        <div class="overlay">
+          <h3>Design Project 2</h3>
+          <p>A brief description of the project goes here.</p>
+          <a href="img2.jpg" class="btn">View Larger</a>
+        </div>
+      </div>
+      <div class="gallery-item" data-image="img3.jpg">
+        <img src="img3-thumb.jpg" alt="Gallery Item">
+        <div class="overlay">
+          <h3>Design Project 3</h3>
+          <p>A brief description of the project goes here.</p>
+          <a href="img3.jpg" class="btn">View Larger</a>
+        </div>
+      </div>
+      <div class="gallery-item" data-image="img4.jpg">
+        <img src="img4-thumb.jpg" alt="Gallery Item">
+        <div class="overlay">
+          <h3>Design Project 4</h3>
+          <p>A brief description of the project goes here.</p>
+          <a href="img4.jpg" class="btn">View Larger</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="lightbox">
+      <img src="" alt="Larger Image">
+      <a href="#" class="close-btn">&times;</a>
+    </div>
+    <div class="gallery-nav">
+      <button class="prev">&lt;</button>
+      <button class="next">&gt;</button>
+    </div>
+  </section>
+  <footer id="contactus">
+    <div class="container">
+      <div class="footer-info">
+        <h3>Contact Us</h3>
+        <p>Please fill out the form below to get in touch.</p>
+        <form id="contact-form">
+          <input type="text" placeholder="Name" id="name">
+          <input type="email" placeholder="Email" id="email">
+          <textarea placeholder="Message" id="message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    // Define your EmailJS user ID and service ID
+    const USER_ID = '2sXi3VrjGOJszVLAt';
+    const SERVICE_ID = 'service_5ghhmyt';
+  
+    // Add an event listener to the form submit button
+    document.querySelector('#submit-btn').addEventListener('click', function(event) {
+      event.preventDefault();
+      // Collect form data
+      const name = document.querySelector('#name').value;
+      const email = document.querySelector('#email').value;
+      const message = document.querySelector('#message').value;
+  
+      // Check if required fields are filled
+      if (!name || !email || !message) {
+        alert('Please fill all required fields');
+        return;
+      }
+  
+      // Send email using EmailJS
+      emailjs.send(SERVICE_ID, 'template_0pa87yh', {
+        from_name: name,
+        from_email: email,
+        message_html: message,
+        to_email: 'kishoresn21ec@psnacet.edu.in'
+      }, USER_ID)
+      .then(function(response) {
+        alert('Your message has been sent');
+        // Clear the form after successful submission
+        document.querySelector('#name').value = '';
+        document.querySelector('#email').value = '';
+        document.querySelector('#message').value = '';
+      }, function(error) {
+        console.error('Error sending email:', error);
+        alert('There was an error sending your message. Please try again later.');
+      });
+    });
+  </script>
+</body>
+</html>
